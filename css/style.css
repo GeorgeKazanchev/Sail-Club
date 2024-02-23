@@ -32,7 +32,9 @@ a {
     text-transform: uppercase;
 }
 
-.event h2 {
+.event h2,
+.news h2,
+.contacts h2 {
     font-size: 24px;
     font-weight: 700;
     line-height: 34px;
@@ -48,15 +50,54 @@ a {
     line-height: 24px;
 }
 
-.contacts h2 {
-    font-size: 24px;
+.news-article figcaption {
+    font-size: 16px;
+    line-height: 19px;
+    color: #8693a4;
+}
+
+.news-article h3 {
+    font-size: 22px;
     font-weight: 700;
-    line-height: 34px;
-    text-decoration: underline;
-    text-decoration-color: #00c6bd;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 15px;
-    text-underline-position: under;
+    line-height: 26px;
+}
+
+.news-article h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.news-article p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.news-article ins {
+    text-decoration: none;
+}
+
+.news-article ul li {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.news-article blockquote {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.news-article-author h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+.news-article-author time {
+    font-size: 16px;
+    line-height: 19px;
+    color: #8693a4;
 }
 
 .contacts-list-item h3 {
