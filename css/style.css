@@ -15,16 +15,185 @@ a {
 }
 
 .page-header {
-    width: 1280px;
-    margin: 0 auto;
     margin-bottom: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+}
+
+.services {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(22, 49, 82, 0.1);
+}
+
+.services-content {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.location {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 25px;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 14px;
+    color: inherit;
+    text-decoration: none;
+    background-image: url("../img/pin.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.location:hover {
+    opacity: 0.5;
+}
+
+.location:active {
+    opacity: 0.3;
+}
+
+.caption {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.theme-switcher {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.theme-switcher li {
+    margin-right: 10px;
+}
+
+.theme-switcher li:last-child {
+    margin-right: 0;
+}
+
+.theme-button-light {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("../img/sun.svg");
+    border: 1px solid #00c6bd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-button-light:hover {
+    opacity: 0.5;
+}
+
+.theme-button-light:active {
+    opacity: 0.3;
+}
+
+.theme-button-light.active {
+    background-image: url("../img/sun-light.svg");
+}
+
+.theme-button-dark {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-image: url("../img/moon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 1px solid #00c6bd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-button-dark:hover {
+    opacity: 0.5;
+}
+
+.theme-button-dark:active {
+    opacity: 0.3;
+}
+
+.theme-button-dark.active {
+    background-image: url("../img/moon-light.svg");
+}
+
+.fonts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fonts li {
+    margin-right: 10px;
+}
+
+.fonts li:last-child {
+    margin-right: 0;
+}
+
+.font-button-sans-serif {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 14px;
+    background-color: transparent;
+    border: 1px solid #00c6bd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.font-button-sans-serif:hover {
+    opacity: 0.5;
+}
+
+.font-button-sans-serif:active {
+    opacity: 0.3;
+}
+
+.font-button-serif {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    font-family: "Philosopher", serif;
+    font-size: 16px;
+    line-height: 14px;
+    background-color: transparent;
+    border: 1px solid #00c6bd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.font-button-serif:hover {
+    opacity: 0.5;
+}
+
+.font-button-serif:active {
+    opacity: 0.3;
 }
 
 .page-navigation {
     width: 1170px;
     margin: 0 auto;
+    padding: 20px 55px;
     display: flex;
     align-items: center;
 }
@@ -107,18 +276,7 @@ a {
 .event {
     width: 1030px;
     margin: 0 auto;
-}
-
-.event-1 {
-    margin-bottom: 100px;
     display: flex;
-    justify-content: space-between;
-}
-
-.event-2 {
-    margin-bottom: 120px;
-    display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
@@ -126,15 +284,29 @@ a {
     width: 400px;
 }
 
-.event-2 .event-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: end;
-}
-
 .event-img {
     width: 600px;
+}
+
+.event-1 {
+    margin-bottom: 100px;
+}
+
+.event-1 .event-content {
+    margin-right: 30px;
+}
+
+.event-2 {
+    margin-bottom: 120px;
+    flex-direction: row-reverse;
+}
+
+.event-2 .event-content {
+    text-align: right;
+}
+
+.event-2 img {
+    margin-right: 30px;
 }
 
 .event-dates {
@@ -160,9 +332,48 @@ a {
     text-underline-position: under;
 }
 
-.event p:not(.event-dates) {
+.event-description {
+    margin-top: 0;
+    margin-bottom: 15px;
+
     font-size: 16px;
     line-height: 24px;
+}
+
+.more {
+    padding: 0;
+
+    /* Элемент скрыт в развернутой статье */
+    display: none;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: inherit;
+    text-decoration-line: underline;
+    background-color: transparent;
+    border: none;
+}
+
+.more:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.more:active {
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+.event.short .event-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.event.short .more {
+    /* Показываем элемент в свернутой статье */
+    display: inline-block;
 }
 
 .rent {
@@ -171,9 +382,15 @@ a {
     margin-bottom: 120px;
 }
 
+.rent header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
 .rent h2 {
     margin: 0;
-    margin-bottom: 55px;
 
     font-size: 24px;
     font-weight: 700;
@@ -183,6 +400,65 @@ a {
     text-decoration-thickness: 2px;
     text-underline-offset: 15px;
     text-underline-position: under;
+}
+
+.card-view-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+    list-style: none;
+}
+
+.card-view-button-grid {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("../img/grid.svg");
+    border: 1px solid #00c6bd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-view-button-grid:hover {
+    opacity: 0.5;
+}
+
+.card-view-button-grid:active {
+    opacity: 0.3;
+}
+
+.card-view-button-grid.active {
+    background-image: url("../img/grid-light.svg");
+}
+
+.card-view-button-list {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("../img/list.svg");
+    border: 1px solid #00c6bd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card-view-button-list:hover {
+    opacity: 0.5;
+}
+
+.card-view-button-list:active {
+    opacity: 0.3;
+}
+
+.card-view-button-list.active {
+    background-image: url("../img/list-light.svg");
 }
 
 .rent-yacht-list {
@@ -233,8 +509,9 @@ a {
     margin: 0;
     margin-top: 15px;
     margin-bottom: 29px;
+    margin-left: 15px;
     padding: 0;
-    list-style: none;
+    list-style: disc;
 
     font-size: 14px;
     line-height: 19px;
@@ -245,17 +522,6 @@ a {
     margin-bottom: 4px;
 }
 
-.yacht-feature::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 50%;
-    background-color: rgba(22, 49, 82, 1);
-}
-
 .rent-yacht-price {
     margin: 0;
     display: flex;
@@ -264,6 +530,50 @@ a {
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
+}
+
+/* Вертикальная раскладка карточек списком */
+
+.rent-yacht-list.list {
+    flex-direction: column;
+}
+
+.rent-yacht-list.list .rent-yacht-item {
+    display: flex;
+    width: 1110px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.rent-yacht-list.list .rent-yacht-item img {
+    width: 340px;
+    height: 211px;
+    margin: 0;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.rent-yacht-list.list .yacht-title {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.rent-yacht-list.list .yacht-features {
+    margin: 0;
+    margin-left: 18px;
+}
+
+.rent-yacht-list.list .yacht-item-content {
+    margin-right: auto;
+    max-width: 345px;
+}
+
+.rent-yacht-list.list .rent-yacht-price {
+    margin: 0;
+}
+
+.rent-yacht-list.list .price-name {
+    display: none;
 }
 
 .gallery {
@@ -294,7 +604,7 @@ a {
     justify-content: space-between;
 }
 
-.active-img {
+.active-photo {
     width: 970px;
     display: block;
 }
@@ -438,7 +748,9 @@ a {
 }
 
 .author-avatar {
+    width: 60px;
     margin-right: 15px;
+    border-radius: 50%;
 }
 
 .news-article-author a {
@@ -656,4 +968,80 @@ a {
 
 .footer-navigation-inner-item:last-child {
     margin-bottom: 0;
+}
+
+/* Выделение активной кнопки */
+
+.active {
+    background-color: #00c6bd;
+    color: #fdfdff;
+}
+
+/* Theme: serif font */
+
+.page.serif {
+    font-family: "Philosopher", serif;
+}
+
+/* Theme: dark */
+
+.page.dark {
+    color: #fdfdff;
+    background-color: #1d1f1f;
+}
+
+.page.dark .font-button-sans-serif {
+    color: #fdfdff;
+}
+
+.page.dark .font-button-serif {
+    color: #fdfdff;
+}
+
+.page.dark .theme-button-light {
+    background-image: url("../img/sun-light.svg");
+}
+
+.page.dark .logo img {
+    filter: brightness(20);
+}
+
+.page.dark a {
+    color: #fdfdff;
+}
+
+.page.dark a:hover {
+    opacity: 0.5;
+}
+
+.page.dark a:active {
+    opacity: 0.3;
+}
+
+.page.dark .signin img {
+    filter: brightness(20);
+}
+
+.page.dark .card-view-button-grid {
+    background-image: url("../img/grid-light.svg");
+}
+
+.page.dark .card-view-button-list {
+    background-image: url("../img/list-light.svg");
+}
+
+.page.dark .rent-yacht-item {
+    box-shadow: 0 4px 30px #181a1a;
+}
+
+.page.dark .news-article-meta time {
+    color: rgba(253, 253, 255, 0.5);
+}
+
+.page.dark .social-list-item img {
+    filter: brightness(20);
+}
+
+.page.dark .news-article-share {
+    filter: brightness(20);
 }
