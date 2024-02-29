@@ -165,6 +165,107 @@ a {
     line-height: 24px;
 }
 
+.rent {
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.rent h2 {
+    margin: 0;
+    margin-bottom: 55px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    text-decoration: underline;
+    text-decoration-color: #00c6bd;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    text-underline-position: under;
+}
+
+.rent-yacht-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.rent-yacht-item {
+    width: 370px;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0px 4px 30px 0px rgba(22, 49, 82, 0.12);
+}
+
+.rent-yacht-item img {
+    width: 310px;
+    height: 141px;
+    display: block;
+}
+
+.yacht-title {
+    margin: 0;
+    margin-top: 21px;
+    margin-bottom: 18px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.yacht-description {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.yacht-features {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 29px;
+    padding: 0;
+    list-style: none;
+
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.yacht-feature {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.yacht-feature::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: rgba(22, 49, 82, 1);
+}
+
+.rent-yacht-price {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
 .gallery {
     width: 1170px;
     margin: 0 auto;
@@ -333,7 +434,7 @@ a {
 .news-article-author {
     margin-top: 40px;
     display: flex;
-    align-items: center;   
+    align-items: center;
 }
 
 .author-avatar {
