@@ -2,6 +2,8 @@
 
 Вёрстка лендинга выполнялась во время изучения курса онлайн-школы HTML Academy.
 
+[Ссылка на лендинг](https://georgekazanchev.github.io/Sail-Club/)
+
 [Ссылка на макет в Figma](https://www.figma.com/file/6qDWCtD9BkB3fPSbUHiknB/fe-start-04?type=design&node-id=0-1&mode=design&t=FSKdJyX9EBYLyKfP-0)
 
 ## Процесс создания
